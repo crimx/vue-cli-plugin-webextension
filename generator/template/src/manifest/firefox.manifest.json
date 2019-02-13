@@ -1,0 +1,11 @@
+{
+  "background": {
+    "scripts": ["lib/browser-polyfill.min.js", "background.js"]
+  },
+  "applications": {
+    "gecko": {
+      "id": "",
+      "strict_min_version": "56.0"
+    }
+  }
+}

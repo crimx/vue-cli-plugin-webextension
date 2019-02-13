@@ -1,0 +1,14 @@
+{
+  "extension_name": {
+    "description": "Extension name",
+    "message": "Extension name"
+  },
+  "extension_short_name": {
+    "description": "Extension short name",
+    "message": "Short name"
+  },
+  "extension_description": {
+    "description": "Description of extension",
+    "message": "Description of extension."
+  }
+}
