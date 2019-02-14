@@ -1,11 +1,10 @@
 {
-  "homepage_url": "",
+  "homepage_url": "<%- pkg.homepage || '' %>",
   "manifest_version": 2,
   "name": "__MSG_extension_name__",
   "short_name": "__MSG_extension_short_name__",
   "description": "__MSG_extension_description__",
   "default_locale": "en",
-  "version": "1.0.0",
   "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
@@ -13,14 +12,14 @@
   },
   "content_scripts": [
     {
-      "js": ["static/browser-polyfill.min.js"],
+      "js": ["lib/browser-polyfill.min.js"],
       "matches": ["<all_urls>"],
       "run_at": "document_start",
       "match_about_blank": true,
       "all_frames": true
     },
     {
-      "js": ["lib/browser-polyfill.min.js", "contents/content.js"],
+      "js": ["contents/content.js"],
       "matches": ["<all_urls>"]
     }
   ],

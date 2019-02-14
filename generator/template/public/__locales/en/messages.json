@@ -1,14 +1,14 @@
 {
   "extension_name": {
     "description": "Extension name",
-    "message": "Extension name"
+    "message": "<%- pkg.name || 'Extension name' %>"
   },
   "extension_short_name": {
     "description": "Extension short name",
-    "message": "Short name"
+    "message": "<%- pkg.name || 'Short name' %>"
   },
   "extension_description": {
     "description": "Description of extension",
-    "message": "Description of extension."
+    "message": "<%- pkg.description || 'Description of extension.' %>"
   }
 }
